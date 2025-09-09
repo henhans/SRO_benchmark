@@ -1,0 +1,40 @@
+
+USER      =  tl596
+HOMEDIR   =  /home/tl596
+JOB_ID    =  928761
+JOB_NAME  =  M1000
+QUEUE     =  i36m5
+NSLOTS    =  36
+NHOSTS    =  1
+
+SUB_HOST  =  rupc02
+SUB_DIR   =  /mnt/wk05/tl596/Models/multiorb_g-RISB/sro/3o15b_JoverU0.2/U2.0
+
+EXE_HOST  =  n48
+EXE_DIR   =  /scratch
+OUT_DIR   =  /scratch
+TMP_DIR   =  /tmp/928761.1.i36m5
+
+INFO      =  Files larger than 100MB will be compressed to reduce the network load.
+INFO2     =  Do NOT remove this file while job is running!
+
+PORT      =  23761
+
+Your job started at Wed May 3 14:07:39 EDT 2023 on host n48 in /scratch/928761tl596
+Submission directory is /mnt/wk05/tl596/Models/multiorb_g-RISB/sro/3o15b_JoverU0.2/U2.0 on host rupc02
+-----------------------------------------------------------------------------------------
+Currently Loaded Modulefiles:
+  1) gnu/7.2.0/gcc    2) gnu/7.2.0/ompi   3) anaconda3
+/opt/sw/ompi/gnu/7.2.0/fftw-3.3.6-mpi/lib:/opt/sw/ompi/gnu/7.2.0/lib:/opt/gnu/7.2.0/lib64:/home/tl596/git/edrixs/src:/opt/lib/arpack-ng/intel/lib/:/opt/lib/openblas/:/opt/intel/mkl/lib/intel64/:/opt/intel/lib/intel64/
+/home/tl596/.local/lib/python3.6/site-packages/qepack/external/pyscf_solvers.py:20: ComplexWarning: Casting complex values to real discards the imaginary part
+  tmat[:self.nimp,:self.nimp] = H1E
+/home/tl596/.local/lib/python3.6/site-packages/qepack/external/pyscf_solvers.py:21: ComplexWarning: Casting complex values to real discards the imaginary part
+  tmat[:self.nimp,self.nimp:] = D.T
+/home/tl596/.local/lib/python3.6/site-packages/qepack/external/pyscf_solvers.py:22: ComplexWarning: Casting complex values to real discards the imaginary part
+  tmat[self.nimp:,self.nimp:] = -LAMBDA
+/home/tl596/.local/lib/python3.6/site-packages/qepack/external/pyscf_solvers.py:23: ComplexWarning: Casting complex values to real discards the imaginary part
+  tmat[self.nimp:,:self.nimp] = D.conj()
+/home/tl596/.local/lib/python3.6/site-packages/qepack/external/pyscf_solvers.py:26: ComplexWarning: Casting complex values to real discards the imaginary part
+  self.h2[:self.nimp//2,:self.nimp//2,:self.nimp//2,:self.nimp//2] = V2E[::2,::2,1::2,1::2] # spin symmetric
+Overwritten attributes  get_ovlp get_hcore  of <class 'pyscf.scf.hf.RHF'>
+Your job finished at Wed May 3 17:01:48 EDT 2023
